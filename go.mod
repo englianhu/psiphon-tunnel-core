@@ -1,0 +1,72 @@
+module github.com/Psiphon-Labs/psiphon-tunnel-core
+
+go 1.17
+
+require (
+	git.torproject.org/pluggable-transports/goptlib.git v1.1.0
+	github.com/AndreasBriese/bbloom v0.0.0-20170702084017-28f7e881ca57
+	github.com/Psiphon-Inc/rotate-safe-writer v0.0.0-20210303140923-464a7a37606e
+	github.com/Psiphon-Labs/bolt v0.0.0-20200624191537-23cedaef7ad7
+	github.com/Psiphon-Labs/chacha20 v0.2.1-0.20200128191310-899a4be52863
+	github.com/Psiphon-Labs/goarista v0.0.0-20160825065156-d002785f4c67
+	github.com/Psiphon-Labs/goptlib v0.0.0-20200406165125-c0e32a7a3464
+	github.com/Psiphon-Labs/net v0.0.0-20191204183604-f5d60dada742
+	github.com/Psiphon-Labs/quic-go v0.14.1-0.20200306193310-474e74c89fab
+	github.com/Psiphon-Labs/tls-tris v0.0.0-20200610161156-7d791789810f
+	github.com/agl/ed25519 v0.0.0-20170116200512-5312a6153412
+	github.com/armon/go-proxyproto v0.0.0-20180202201750-5b7edb60ff5f
+	github.com/armon/go-socks5 v0.0.0-20160902184237-e75332964ef5
+	github.com/bifurcation/mint v0.0.0-20180306135233-198357931e61
+	github.com/cheekybits/genny v1.0.0
+	github.com/cognusion/go-cache-lru v0.0.0-20170419142635-f73e2280ecea
+	github.com/creack/goselect v0.0.0-20160714172859-1bd5ca702c61
+	github.com/davecgh/go-spew v1.1.1-0.20171005155431-ecdeabc65495
+	github.com/dchest/siphash v1.2.3-0.20201109081723-a21c2e7914a8
+	github.com/deckarep/golang-set v0.0.0-20171013212420-1d4478f51bed
+	github.com/dgraph-io/badger v1.5.4-0.20180815194500-3a87f6d9c273
+	github.com/dgryski/go-farm v0.0.0-20180109070241-2de33835d102
+	github.com/elazarl/goproxy v0.0.0-20200809112317-0581fc3aee2d
+	github.com/elazarl/goproxy/ext v0.0.0-20200809112317-0581fc3aee2d
+	github.com/florianl/go-nfqueue v1.1.1-0.20200829120558-a2f196e98ab0
+	github.com/gobwas/glob v0.2.4-0.20180402141543-f00a7392b439
+	github.com/golang/groupcache v0.0.0-20200121045136-8c9f03a8e57e
+	github.com/golang/protobuf v1.3.2-0.20190318194812-d3c38a4eb497
+	github.com/google/gopacket v1.1.19-0.20200831200443-df1bbd09a561
+	github.com/grafov/m3u8 v0.0.0-20171211212457-6ab8f28ed427
+	github.com/hashicorp/golang-lru v0.0.0-20180201235237-0fb14efe8c47
+	github.com/jinzhu/copier v0.0.0-20201025035756-632e723a6687
+	github.com/juju/ratelimit v1.0.2-0.20191002062651-f60b32039441
+	github.com/kardianos/osext v0.0.0-20170510131534-ae77be60afb1
+	github.com/marten-seemann/qpack v0.1.0
+	github.com/marten-seemann/qtls v0.4.1
+	github.com/marusama/semaphore v0.0.0-20171214154724-565ffd8e868a
+	github.com/miekg/dns v1.1.44-0.20210804161652-ab67aa642300
+	github.com/mitchellh/panicwrap v0.0.0-20170106182340-fce601fe5557
+	github.com/mroth/weightedrand v0.4.0
+	github.com/oschwald/maxminddb-golang v1.2.1-0.20170901134056-26fe5ace1c70
+	github.com/patrickmn/go-cache v2.1.0+incompatible
+	github.com/pkg/errors v0.9.1
+	github.com/pmezard/go-difflib v1.0.0
+	github.com/refraction-networking/gotapdance v0.0.0-20210604203909-88b8e2e421cc
+	github.com/refraction-networking/utls v0.0.0-20210713165636-0b2885c8c0d4
+	github.com/ryanuber/go-glob v0.0.0-20170128012129-256dc444b735
+	github.com/sergeyfrolov/bsbuffer v0.0.0-20180903213811-94e85abb8507
+	github.com/sirupsen/logrus v1.0.7-0.20180813153501-e4b0c6d7829b
+	github.com/stretchr/testify v1.1.5-0.20171018052257-2aa2c176b9da
+	github.com/syndtr/gocapability v0.0.0-20170704070218-db04d3cc01c8
+	github.com/wader/filtertransport v0.0.0-20200316221534-bdd9e61eee78
+	github.com/zach-klippenstein/goregen v0.0.0-20160303162051-795b5e3961ea
+	gitlab.com/yawning/obfs4.git v0.0.0-20190120164510-816cff15f425
+	go.uber.org/atomic v1.3.3-0.20180806045314-ca680462431f
+	go.uber.org/multierr v1.1.1-0.20180122172545-ddea229ff1df
+	go.uber.org/zap v1.9.2-0.20180814183419-67bc79d13d15
+	golang.org/x/crypto v0.0.0-20200429183012-4b2356b1ed79
+	golang.org/x/net v0.0.0-20210226172049-e18ecbb05110
+	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
+	golang.org/x/sys v0.0.0-20210303074136-134d130e1a04
+	golang.org/x/text v0.3.3
+	golang.org/x/tools v0.0.0-20200501155019-2658dc0cadb5
+	golang.org/x/xerrors v0.0.0-20191204190536-9bdfabe68543
+)
+
+require github.com/jteeuwen/go-bindata v3.0.7+incompatible // indirect

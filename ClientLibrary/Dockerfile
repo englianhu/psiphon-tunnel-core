@@ -2,7 +2,7 @@
 #
 # See README.md for usage instructions.
 
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
 # Install system-level dependencies.
 ENV DEBIAN_FRONTEND=noninteractive
@@ -21,7 +21,7 @@ RUN apt-get update -y && apt-get install -y --no-install-recommends \
 
 # Install Go.
 # NOTE: Go 1.10+ is required to build c-shared for windows (https://github.com/golang/go/commit/bb0bfd002ada7e3eb9198d4287b32c2fed6e8da6)
-ENV GOVERSION=go1.14.12 GOROOT=/usr/local/go GOPATH=/go PATH=$PATH:/usr/local/go/bin:/go/bin CGO_ENABLED=1
+ENV GOVERSION=go1.17 GOROOT=$HOME/go GOPATH=$HOME/go PATH=$PATH:/usr/bin/go/bin:/go/bin CGO_ENABLED=1
 
 RUN curl -L https://storage.googleapis.com/golang/$GOVERSION.linux-amd64.tar.gz -o /tmp/go.tar.gz \
    && tar -C /usr/local -xzf /tmp/go.tar.gz \
