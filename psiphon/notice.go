@@ -693,15 +693,23 @@ func NoticeSessionId(sessionId string) {
 		"sessionId", sessionId)
 }
 
+// NoticeSplitTunnelRegions reports that split tunnel is on for the given country codes.
+func NoticeSplitTunnelRegions(regions []string) {
+	singletonNoticeLogger.outputNotice(
+		"SplitTunnelRegions", 0,
+		"regions", regions)
+}
+
 // NoticeUntunneled indicates than an address has been classified as untunneled and is being
 // accessed directly.
 //
 // Note: "address" should remain private; this notice should only be used for alerting
 // users, not for diagnostics logs.
 func NoticeUntunneled(address string) {
-	singletonNoticeLogger.outputNotice(
-		"Untunneled", noticeSkipRedaction,
-		"address", address)
+	outputRepetitiveNotice(
+		"Untunneled", address, 0,
+		"Untunneled", noticeSkipRedaction, "address", address)
+
 }
 
 // NoticeUpstreamProxyError reports an error when connecting to an upstream proxy. The
