@@ -58,3 +58,4 @@ build/
 
 # Intellij IDEs
 .idea/
+.Rproj.user
